@@ -1,44 +1,16 @@
+import: blob,file
+export: blob
 
-File 2 : 44,47,68
-
-
-You have a registered DNS domain named contoso.com.
-You create a public Azure DNS zone named contoso.com.
-You need to ensure that records created in the contoso.com zone are resolvable from the internet.
-What should you do?
-A. Modify the SOA record in the DNS domain registrar.
-B. Create the SOA record in contoso.com.
-C. Modify the NS records in the DNS domain registrar.
-D. Create NS records in contoso.com.
-
-A. Remove User1 from the Security Reader role for Subscription1. Assign User1 the Contributor role for 
-RG1.
-B. Assign User1 the Owner role for VNet1.
-C. Assign User1 the Contributor role for VNet1.
-D. Assign User1 the Network Contributor role for VNet1.
-
-
-You have 15 Azure subscriptions.
-You have an Azure Active Directory (Azure AD) tenant that contains a security group named Group1.
-You plan to purchase additional Azure subscription.
-You need to ensure that Group1 can manage role assignments for the existing subscriptions and the planned 
-subscriptions. The solution must meet the following requirements:
-✑ Use the principle of least privilege.
-✑ Minimize administrative effort.
-What should you do?
-A. Assign Group1 the Owner role for the root management group.
-B. Assign Group1 the User Access Administrator role for the root management group.
-C. Create a new management group and assign Group1 the User Access Administrator role for the group.
-D. Create a new management group and assign Group1 the Owner role for the group
-
-FILE 3: 105
+File 1: 26, 33, 40
+File 2 :44,47 48, 63, 66, 68, 78, 79
+FILE 3: 91, 104, 105
 FILE 4: 139,140,151,152
 file 5: 172,184
 file 6: 225, 226, 227,237
 file 7: 250, 253,266,267,270,273,276,277
 file 8: 290, 295, 296, 298, 299, 300
 file 9: 310, 312, 317, 319, 320
-file 11: 376, 381, 384, 385, 386, 389->393
+file 11: 366, 376, 381, 384, 385, 386, 389->393
 
 
 Y/N Question
@@ -79,4 +51,31 @@ You need to create new user accounts in external.contoso.onmicrosoft.com.
 Solution: You instruct User1 to create the user accounts.
 Does that meet the goal?
 A. Yes
-	
+
+EXAMTOPIC
+You have configured a point-to-site VPN connection to VirtualNetworkA from a workstation running Windows 10. After configuring virtual network peering between
+VirtualNetworkA and VirtualNetworkB, you confirm that you are able to access VirtualNetworkB from the company's on-premises network. However, you find that you cannot establish a connection to VirtualNetworkB from the Windows 10 workstation.
+You have to make sure that a connection to VirtualNetworkB can be established from the Windows 10 workstation.
+Solution: You download and re-install the VPN client configuration package on the Windows 10 workstation.
+Does the solution meet the goal?
+A. Yes
+
+Your company has a Microsoft SQL Server Always On availability group configured on their Azure virtual machines (VMs).
+You need to configure an Azure internal load balancer as a listener for the availability group.
+Solution: You enable Floating IP.
+Does the solution meet the goal?
+A. Yes Most Voted
+
+You have an Azure Active Directory (Azure AD) tenant named contoso.com.
+You have a CSV file that contains the names and email addresses of 500 external users.
+You need to create a guest user account in contoso.com for each of the 500 external users.
+Solution: You create a PowerShell script that runs the New-AzureADMSInvitation cmdlet for each external user.
+Does this meet the goal?
+A. Yes 
+
+You have an Azure Directory (Azure AD) tenant named Adatum and an Azure Subscription named Subscription1. Adatum contains a group named Developers.
+Subscription1 contains a resource group named Dev.
+You need to provide the Developers group with the ability to create Azure logic apps in the Dev resource group.
+Solution: On Dev, you assign the Logic App Contributor role to the Developers group.
+Does this meet the goal?
+A. Yes 
