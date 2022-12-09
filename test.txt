@@ -2,16 +2,18 @@ import: blob,file
 export: blob
 
 File 1: 26, 33, 40
-File 2 :44,47 48, 63, 66, 68, 78, 79
+File 2: 44 ,47 48, 63, 66, 68, 78, 79
 FILE 3: 91, 104, 105
-FILE 4: 139,140,151,152
-file 5: 172,184
-file 6: 225, 226, 227,237
-file 7: 250, 253,266,267,270,273,276,277
-file 8: 290, 295, 296, 298, 299, 300
+FILE 4: 139,140,151,152, 156, 157, 158, 160
+file 5: 169, 172,184
+file 6: 211, 213, 216,222, 225, 226, 227, 231, 233, 237, 239
+file 7: 250, 253,266,267,270,273,276,277(Linux 7.7 YNY)
+file 8: 290, 298, 299, 300
 file 9: 310, 312, 317, 319, 320
 file 11: 366, 376, 381, 384, 385, 386, 389->393
 
+
+no remember: file6(225,226,239)
 
 Y/N Question
 You have an Azure subscription that contains 10 virtual networks. The virtual networks are hosted in separate
@@ -53,8 +55,11 @@ Does that meet the goal?
 A. Yes
 
 EXAMTOPIC
-You have configured a point-to-site VPN connection to VirtualNetworkA from a workstation running Windows 10. After configuring virtual network peering between
-VirtualNetworkA and VirtualNetworkB, you confirm that you are able to access VirtualNetworkB from the company's on-premises network. However, you find that you cannot establish a connection to VirtualNetworkB from the Windows 10 workstation.
+You have configured a point-to-site VPN connection to VirtualNetworkA from a workstation running Windows 10. 
+After configuring virtual network peering between
+VirtualNetworkA and VirtualNetworkB, you confirm that you are able to access VirtualNetworkB from the company'
+s on-premises network. However, you find that you 
+cannot establish a connection to VirtualNetworkB from the Windows 10 workstation.
 You have to make sure that a connection to VirtualNetworkB can be established from the Windows 10 workstation.
 Solution: You download and re-install the VPN client configuration package on the Windows 10 workstation.
 Does the solution meet the goal?
@@ -73,9 +78,86 @@ Solution: You create a PowerShell script that runs the New-AzureADMSInvitation c
 Does this meet the goal?
 A. Yes 
 
-You have an Azure Directory (Azure AD) tenant named Adatum and an Azure Subscription named Subscription1. Adatum contains a group named Developers.
+You have an Azure Directory (Azure AD) tenant named Adatum and an Azure Subscription named Subscription1.
+ Adatum contains a group named Developers.
 Subscription1 contains a resource group named Dev.
 You need to provide the Developers group with the ability to create Azure logic apps in the Dev resource group.
 Solution: On Dev, you assign the Logic App Contributor role to the Developers group.
 Does this meet the goal?
 A. Yes 
+
+You have an Azure resource group named RG1. RG1 contains a Linux virtual machine (VM) named VM1.
+You need to automate the deployment of 20 additional Linux VMs. The new VMs should be based upon VMTS 
+configuration.
+Solution: You store the Linux VM properties in a template and deploy the additional VMs by editing the 
+template parameter values for each additional VM.
+Does this solution meet the goal?
+A. Yes
+
+You want to install an internet-facing web application named WebApp1 on multiple Azure virtual machines 
+(VMs). The VMs must run Windows Server 2019. Connections to WebApp1 must be spread across all the VMs. 
+The VMs must be located in separate datacenters in the same region. The Service Level Agreement (SLA) 
+percentage of connectivity must be the highest possible.
+Question 192 CertyIQ
+Question 193 CertyIQ
+2022 Latest AZ-900 Exam Actual Questions and other exam series on CertyIQ (YouTube Channel)
+Solution: Create three VMs (each in a different availability zone) and create and configure a standard Stock 
+Keeping Unit (SKU) load balancer.
+Does this solution meet the goal?
+A. Yes
+
+IMAGE
+Your company has an Azure subscription. This includes a virtual network (VNet) named VNet1 with the 
+subnets shown in the exhibit.
+The company is deploying a new Azure container group on VNet1. The container instances need to 
+communicate with VM5 and VM6.
+You need to determine an appropriate location for deploying the container group.
+Question 198 CertyIQ
+2022 Latest AZ-900 Exam Actual Questions and other exam series on CertyIQ (YouTube Channel)
+Solution: You create the container group on Subnet3.
+Solution: You create a new subnet to host the container group when you create the container group.
+Does this solution meet the goal?
+A. Yes
+
+You deploy an Azure web app named MyApp. MyApps runs in a Free pricing tier service plan named MyPlan. 
+During testing, you discover that MyApp stops after 60 minutes and that it cannot be restarted until the next 
+day.
+You need to ensure that MyApp can run eight hours each day during the testing period. You want to keep the 
+additional costs incurred to a minimum.
+Solution: You change the pricing tier for MyPlan to Basic B1.
+Does this solution meet the goal?
+A. Yes
+
+You have an Azure subscription that contains the following resources:
+A virtual network that has a subnet named Subnet1
+Two network security groups (NSGs) named NSG-VM1 and NSG-Subnet1
+A virtual machine named VM1 that has the required Windows Server configurations to allow Remote
+Desktop connections
+NSG-Subnet1 has the default inbound security rules only.
+NSG-VM1 has the default inbound security rules and the following custom inbound security rule:
+Priority: 100
+Source: Any
+Source port range: *
+Destination: *
+Destination port range: 3389
+Protocol: UDP
+Action: Allow
+VM1 has a public IP address and is connected to Subnet1. NSG-VM1 is associated to the network interface of
+VM1. NSG-Subnet1 is associated to Subnet1.
+You need to be able to establish Remote Desktop connections from the internet to VM1.
+Solution: You add an inbound security rule to NSG-Subnet1 and NSG-VM1 that allows connections from the
+internet source to the VirtualNetwork destination for port range 3389 and uses the TCP protocol.
+Does this meet the goal?
+A. Yes
+
+You have an Azure subscription that contains the virtual machines shown in the following table.
+You deploy a load balancer that has the following configurations:
+Name: LB1
+Type: Internal
+SKU: Standard
+Virtual network: VNET1
+You need to ensure that you can add VM1 and VM2 to the backend pool of LB1.
+Solution: You create two Standard public IP addresses and associate a Standard SKU public IP address to the
+network interface of each virtual machine.
+Does this meet the goal?
+A. Yes
